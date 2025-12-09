@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeeva ❤️ Malathi | February 20, 2026</title>
+    <meta name="description" content="Join us for the celebration of a lifetime - Jeeva & Malathi">
+
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="styles-modern.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-rings">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+            <h2 class="loading-text">Jeeva & Malathi</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="modern-nav" id="modernNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">J</span>
+                <span class="logo-heart">❤️</span>
+                <span class="logo-text">M</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#story" class="nav-link">Story</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#rsvp" class="nav-link">RSVP</a>
+            </div>
+            <button class="nav-burger" id="navBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#story" class="mobile-link">Our Story</a>
+            <a href="#events" class="mobile-link">Events</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#rsvp" class="mobile-link">RSVP</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-modern">
+        <div class="hero-bg-layers">
+            <div class="bg-layer layer-1"></div>
+            <div class="bg-layer layer-2"></div>
+            <div class="bg-layer layer-3"></div>
+        </div>
+
+        <div class="hero-content-modern">
+            <!-- Save The Date Badge -->
+            <div class="save-date-badge" data-scroll="fade-in">
+                <span class="badge-line"></span>
+                <span class="badge-text">Save The Date</span>
+                <span class="badge-line"></span>
+            </div>
+
+            <!-- Main Names -->
+            <div class="names-container" data-scroll="slide-up">
+                <h1 class="bride-name-modern">Malathi</h1>
+                <div class="heart-icon-modern">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </div>
+                <h1 class="groom-name-modern">Jeeva</h1>
+            </div>
+
+            <!-- Wedding Date -->
+            <div class="wedding-date-modern" data-scroll="fade-in">
+                <div class="date-ornament-left"></div>
+                <div class="date-text">
+                    <span class="date-month">February</span>
+                    <span class="date-day">20</span>
+                    <span class="date-year">2026</span>
+                </div>
+                <div class="date-ornament-right"></div>
+            </div>
+
+            <!-- Location -->
+            <p class="location-text" data-scroll="fade-in">Kerala | Tamil Nadu</p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-modern" data-scroll="zoom-in">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="daysCount">000</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hoursCount">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutesCount">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="secondsCount">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" data-scroll="bounce">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUPLE SECTION -->
+    <section id="couple" class="couple-modern">
+        <div class="section-header" data-scroll="fade-in">
+            <span class="section-label">Get To Know</span>
+            <h2 class="section-title">The Happy Couple</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="couple-grid-modern">
+            <!-- Bride Card -->
+            <div class="couple-card-modern bride-card" data-scroll="slide-right">
+                <div class="card-ornament top-left"></div>
+                <div class="card-ornament bottom-right"></div>
+                <div class="couple-image-wrapper">
+                    <div class="couple-image">
+                        <span class="emoji-icon">👰🏻</span>
+                    </div>
+                    <div class="image-border"></div>
+                </div>
+                <div class="couple-info">
+                    <h3 class="couple-name">Malathi</h3>
+                    <p class="couple-fullname">Malathi</p>
+                    <div class="info-divider"></div>
+                    <p class="couple-bio">A loving daughter, caring friend, and someone who brings joy to everyone
+                        around her. She loves classical dance, traditional art, and spreading happiness.</p>
+                    <div class="couple-parents">
+                        <span class="parents-label">Daughter of</span>
+                        <span class="parents-names">Mr. & Mrs. Vijayakumar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Groom Card -->
+            <div class="couple-card-modern groom-card" data-scroll="slide-left">
+                <div class="card-ornament top-left"></div>
+                <div class="card-ornament bottom-right"></div>
+                <div class="couple-image-wrapper">
+                    <div class="couple-image">
+                        <span class="emoji-icon">🤵🏻</span>
+                    </div>
+                    <div class="image-border"></div>
+                </div>
+                <div class="couple-info">
+                    <h3 class="couple-name">Jeeva</h3>
+                    <p class="couple-fullname">Jeeva</p>
+                    <div class="info-divider"></div>
+                    <p class="couple-bio">A devoted son, loyal friend, and someone who values family above all. He
+                        enjoys music, traveling, and making memories with loved ones.</p>
+                    <div class="couple-parents">
+                        <span class="parents-label">Son of</span>
+                        <span class="parents-names">Mr. & Mrs. Angusamy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY TIMELINE -->
+    <section id="story" class="story-modern">
+        <div class="section-header" data-scroll="fade-in">
+            <span class="section-label">Our Journey</span>
+            <h2 class="section-title">Our Love Story</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-modern">
+            <!-- Story Item 1 -->
+            <div class="timeline-item" data-scroll="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2014</span>
+                    <h3 class="timeline-title">First Meeting</h3>
+                    <p class="timeline-desc">Our paths crossed at a mutual friend's wedding in Chennai. A simple
+                        conversation turned into hours of laughter and connection.</p>
+                </div>
+            </div>
+
+            <!-- Story Item 2 -->
+            <div class="timeline-item" data-scroll="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2020</span>
+                    <h3 class="timeline-title">Getting Closer</h3>
+                    <p class="timeline-desc">Through countless calls, messages, and coffee dates, we discovered how
+                        perfectly our dreams aligned.</p>
+                </div>
+            </div>
+
+            <!-- Story Item 3 -->
+            <div class="timeline-item" data-scroll="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2022</span>
+                    <h3 class="timeline-title">The Proposal</h3>
+                    <p class="timeline-desc">Under the stars at the backwaters of Kerala, he asked the most important
+                        question, and she said YES!</p>
+                </div>
+            </div>
+
+            <!-- Story Item 4 -->
+            <div class="timeline-item" data-scroll="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2024</span>
+                    <h3 class="timeline-title">The Engagement</h3>
+                    <p class="timeline-desc">Surrounded by family and friends, we officially began our journey towards
+                        forever.</p>
+                </div>
+            </div>
+
+            <!-- Story Item 5 -->
+            <div class="timeline-item featured" data-scroll="zoom-in">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-year">2026</span>
+                    <h3 class="timeline-title">Our Wedding</h3>
+                    <p class="timeline-desc">And now, we're ready to write our next chapter together, forever and
+                        always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="events-modern">
+        <div class="section-header" data-scroll="fade-in">
+            <span class="section-label">Celebrations</span>
+            <h2 class="section-title">Wedding Events</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="events-grid-modern">
+            <!-- Event 1: Mehendi -->
+            <div class="event-card-modern" data-scroll="flip-up">
+                <div class="event-number">01</div>
+                <div class="event-icon">🎨</div>
+                <h3 class="event-title">Mehendi Ceremony</h3>
+                <p class="event-subtitle">Henna Celebration</p>
+                <div class="event-details-list">
+                    <div class="event-detail">
+                        <span class="detail-icon">📅</span>
+                        <span class="detail-text">February 18, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">⏰</span>
+                        <span class="detail-text">5:00 PM Onwards</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">📍</span>
+                        <span class="detail-text">Grand Kalyana Mandapam, Thrissur</span>
+                    </div>
+                </div>
+                <button class="event-btn" onclick="openMap('mehendi')">View Location</button>
+            </div>
+
+            <!-- Event 2: Sangeet -->
+            <div class="event-card-modern" data-scroll="flip-up">
+                <div class="event-number">02</div>
+                <div class="event-icon">🎵</div>
+                <h3 class="event-title">Sangeet Night</h3>
+                <p class="event-subtitle">Music & Dance</p>
+                <div class="event-details-list">
+                    <div class="event-detail">
+                        <span class="detail-icon">📅</span>
+                        <span class="detail-text">February 19, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">⏰</span>
+                        <span class="detail-text">6:00 PM Onwards</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">📍</span>
+                        <span class="detail-text">Hotel Taj Gateway, Kochi</span>
+                    </div>
+                </div>
+                <button class="event-btn" onclick="openMap('sangeet')">View Location</button>
+            </div>
+
+            <!-- Event 3: Wedding -->
+            <div class="event-card-modern featured-event" data-scroll="flip-up">
+                <div class="featured-badge">Main Event</div>
+                <div class="event-number">03</div>
+                <div class="event-icon">💍</div>
+                <h3 class="event-title">Wedding Ceremony</h3>
+                <p class="event-subtitle">Sacred Union</p>
+                <div class="event-details-list">
+                    <div class="event-detail">
+                        <span class="detail-icon">📅</span>
+                        <span class="detail-text">February 20, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">⏰</span>
+                        <span class="detail-text">9:00 AM - Muhurtham</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">📍</span>
+                        <span class="detail-text">Guruvayur Temple Hall, Kerala</span>
+                    </div>
+                </div>
+                <button class="event-btn" onclick="openMap('wedding')">View Location</button>
+            </div>
+
+            <!-- Event 4: Reception -->
+            <div class="event-card-modern" data-scroll="flip-up">
+                <div class="event-number">04</div>
+                <div class="event-icon">🎉</div>
+                <h3 class="event-title">Reception</h3>
+                <p class="event-subtitle">Grand Celebration</p>
+                <div class="event-details-list">
+                    <div class="event-detail">
+                        <span class="detail-icon">📅</span>
+                        <span class="detail-text">February 20, 2026</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">⏰</span>
+                        <span class="detail-text">7:00 PM Onwards</span>
+                    </div>
+                    <div class="event-detail">
+                        <span class="detail-icon">📍</span>
+                        <span class="detail-text">Le Meridien, Coimbatore</span>
+                    </div>
+                </div>
+                <button class="event-btn" onclick="openMap('reception')">View Location</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-modern">
+        <div class="section-header" data-scroll="fade-in">
+            <span class="section-label">Memories</span>
+            <h2 class="section-title">Our Moments</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="gallery-grid-modern">
+            <div class="gallery-item-modern" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Engagement</p>
+                </div>
+            </div>
+            <div class="gallery-item-modern tall" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Pre-wedding</p>
+                </div>
+            </div>
+            <div class="gallery-item-modern" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Memories</p>
+                </div>
+            </div>
+            <div class="gallery-item-modern wide" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Together</p>
+                </div>
+            </div>
+            <div class="gallery-item-modern" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Love</p>
+                </div>
+            </div>
+            <div class="gallery-item-modern tall" data-scroll="zoom-in">
+                <div class="gallery-placeholder">
+                    <span class="gallery-icon">📸</span>
+                    <p class="gallery-label">Celebration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section id="rsvp" class="rsvp-modern">
+        <div class="section-header" data-scroll="fade-in">
+            <span class="section-label">Please Confirm</span>
+            <h2 class="section-title">Will You Join Us?</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <form class="rsvp-form-modern" id="rsvpFormModern" data-scroll="slide-up">
+            <div class="form-row-modern">
+                <div class="form-group-modern">
+                    <label>Your Name *</label>
+                    <input type="text" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group-modern">
+                    <label>Email *</label>
+                    <input type="email" name="email" required placeholder="your@email.com">
+                </div>
+            </div>
+
+            <div class="form-row-modern">
+                <div class="form-group-modern">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group-modern">
+                    <label>Number of Guests</label>
+                    <input type="number" name="guests" min="1" max="10" value="1">
+                </div>
+            </div>
+
+            <div class="form-group-modern">
+                <label>Will You Attend? *</label>
+                <div class="radio-group-modern">
+                    <label class="radio-label-modern">
+                        <input type="radio" name="attendance" value="yes" required>
+                        <span class="radio-text">Joyfully Accept</span>
+                    </label>
+                    <label class="radio-label-modern">
+                        <input type="radio" name="attendance" value="no">
+                        <span class="radio-text">Regretfully Decline</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group-modern">
+                <label>Which Events?</label>
+                <div class="checkbox-grid-modern">
+                    <label class="checkbox-label-modern">
+                        <input type="checkbox" name="events" value="mehendi">
+                        <span class="checkbox-text">Mehendi</span>
+                    </label>
+                    <label class="checkbox-label-modern">
+                        <input type="checkbox" name="events" value="sangeet">
+                        <span class="checkbox-text">Sangeet</span>
+                    </label>
+                    <label class="checkbox-label-modern">
+                        <input type="checkbox" name="events" value="wedding">
+                        <span class="checkbox-text">Wedding</span>
+                    </label>
+                    <label class="checkbox-label-modern">
+                        <input type="checkbox" name="events" value="reception">
+                        <span class="checkbox-text">Reception</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group-modern">
+                <label>Meal Preference</label>
+                <select name="meal">
+                    <option value="">Select preference</option>
+                    <option value="veg">Vegetarian</option>
+                    <option value="nonveg">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="jain">Jain</option>
+                </select>
+            </div>
+
+            <div class="form-group-modern">
+                <label>Special Message</label>
+                <textarea name="message" rows="4"
+                    placeholder="Let us know if you have any special requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn-modern">
+                <span class="btn-text">Send RSVP</span>
+                <span class="btn-arrow">→</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-modern">
+        <div class="footer-content-modern">
+            <div class="footer-logo">
+                <span class="footer-initials">J & M</span>
+            </div>
+            <p class="footer-hashtag">#JeevaWedsMalathi2026</p>
+            <p class="footer-text">Can't wait to celebrate with you!</p>
+            <div class="footer-social">
+                <a href="#" class="social-link-modern">Instagram</a>
+                <span class="social-dot">•</span>
+                <a href="#" class="social-link-modern">Facebook</a>
+                <span class="social-dot">•</span>
+                <a href="#" class="social-link-modern">WhatsApp</a>
+            </div>
+            <p class="footer-copyright">© 2026 Jeeva & Malathi | Made with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Modern JavaScript -->
+    <script src="script-modern.js"></script>
+</body>
+
+</html>
